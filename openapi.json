@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-        "url": "http://http-bin-httpbin-api.httpbin.svc.cluster.local",
+        "url": "http://192.168.88.200",
         "description": "Internal URL for use within the Kubernetes cluster"
     }
   ],
