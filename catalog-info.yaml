@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-httpbin
+  title: API Httpbin
+  description: API de teste para consumo no Backstage
+  tags:
+    - http
+    - openapi
+    - teste
+  annotations:
+    portal.backstage.io/postman-path: postman/api-httpbin.postman_collection.json
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:development/guest
+  system: api-consumer-portal
+  definition:
+    $openapi: ./openapi.yaml
